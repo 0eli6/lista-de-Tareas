@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/eli/css/style.css">
+    <script src="/js/Vue3.js"></script>
+    <title>Listado de Tareas</title>
+</head>
+<body>
+    <header><h1>Lista de tareas</h1></header>
+    <section id="seccion">
+        <p>Listado de tareas para tachar y una barra de progreso que cambia de color conforme va aumentando</p>
+        <input type="text">
+        <hr>
+        <button id="mas" @click="aumento" :disabled="progreso == 100">+</button>
+        <button id="menos" @click="decremento" :disabled="progreso == 0">-</button>
+        <h3>{{progreso}}</h3>
+        <div :class="cambioColor" :style="{ width: progreso + '%' }">{{ progreso }}%</div>
+        <hr>
+        <section>
+            <div v-for="(tarea, index) in pendientes" :key="index" @click="tacharTexto(tarea)" :class="{ tachado: tarea.tachado }">
+                {{ tarea.texto }}
+            </div>
+            <h3>Completado: {{ conteo }}</h3>
+        </section>
+    </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>

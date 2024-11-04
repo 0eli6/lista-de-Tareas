@@ -1,0 +1,59 @@
+.colorVerde {
+    height: 100%;
+    width: 0;
+    background-color: green;
+    border-radius: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+.colorAmarillo {
+    height: 100%;
+    width: 0;
+    background-color: yellow;
+    border-radius: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.colorRojo {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    border-radius: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+#mas{
+background-color: green;
+}
+#menos{
+background-color: red;
+}
+.tachado {
+    text-decoration: line-through;
+}
+header{
+    text-align: center;
+    background-color: #7a551c;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+}
+body{
+    background-color: #b68e56;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#seccion{
+    margin-top: 70px;
+    background-color: #eee2b4;
+    text-align: center;
+    width: 700px;
+}
+h1{
+    color: yellow;
+}
